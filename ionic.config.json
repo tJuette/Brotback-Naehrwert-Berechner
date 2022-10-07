@@ -1,0 +1,7 @@
+{
+  "name": "Breadbaking Nutritiants Tracker",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}

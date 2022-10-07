@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "Breadbaking Nutritiants Tracker",
+	"webDir": "dist",
+	"bundledWebRuntime": false
+}
