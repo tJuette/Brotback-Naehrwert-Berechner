@@ -26,9 +26,13 @@ import '/src/assets/custom.css';
 import '/src/assets/tailwind.css';
 import 'material-icons/iconfont/material-icons.css';
 
+import { createPinia } from 'pinia';
+const pinia = createPinia();
+
 const app = createApp(App)
   .use(IonicVue)
-  .use(router);
+  .use(router)
+  .use(pinia);
 
 router.isReady().then(() => {
   app.mount('#app');
