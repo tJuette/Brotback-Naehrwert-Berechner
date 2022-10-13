@@ -1,16 +1,25 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 import { RouteRecordRaw } from 'vue-router';
-import HomePage from '../views/HomePage.vue'
+import IngredientNutrients from '/src/components/pages/IngredientNutrients.vue';
+import DoughNutrients from '/src/components/pages/DoughNutrients.vue';
+import BreadNutrients from '/src/components/pages/BreadNutritiens.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    redirect: '/home'
+    redirect: '/ingredient-nutrients'
   },
   {
-    path: '/home',
-    name: 'Home',
-    component: HomePage
+    path: '/ingredient-nutrients',
+    component: IngredientNutrients,
+  },
+  {
+    path: '/dough-nutrients',
+    component: DoughNutrients,
+  },
+  {
+    path: '/bread-nutrients',
+    component: BreadNutrients,
   }
 ]
 

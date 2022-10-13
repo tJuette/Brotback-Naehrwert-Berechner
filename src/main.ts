@@ -22,11 +22,14 @@ import '@ionic/vue/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import '/src/assets/custom.css';
+import '/src/assets/tailwind.css';
+import 'material-icons/iconfont/material-icons.css';
 
 const app = createApp(App)
   .use(IonicVue)
   .use(router);
-  
+
 router.isReady().then(() => {
   app.mount('#app');
 });

@@ -1,14 +1,16 @@
 <template>
   <ion-app>
     <ion-router-outlet />
+    <FooterNavBar />
   </ion-app>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import { IonApp, IonRouterOutlet } from '@ionic/vue';
 import { defineComponent } from 'vue';
+import FooterNavBar from '/src/components/molecules/FooterNavBar.vue';
 
-export default defineComponent({
+defineComponent({
   name: 'App',
   components: {
     IonApp,
